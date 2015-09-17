@@ -464,7 +464,7 @@ static MainGLView* sharedInstance = nil;
         UIImage* image = [self saveBufferToImageWidth:width Height:height];
         if (_isTweetCapturing)
         {
-            [self tweetCapture:image];
+            //[self tweetCapture:image];
         }
         else
             [[ShaderManager Instance].currentShader saveImage:image];
@@ -568,6 +568,7 @@ static MainGLView* sharedInstance = nil;
                      interfaceOrientation == UIDeviceOrientationPortraitUpsideDown);
 }
 
+/*
 -(void)tweetCapture:(UIImage*)captureImage
 {
     _isTweetCapturing = false;
@@ -595,7 +596,7 @@ static MainGLView* sharedInstance = nil;
     };
     [tweetView setCompletionHandler:completionHandler];
     [[ViewController Instance] presentModalViewController:tweetView animated:YES];
-}
+}*/
 
 
 /*

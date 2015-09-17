@@ -267,7 +267,7 @@
         int count = 0;
         for (int i=0; i<line; i++)
         {
-            CGSize stringSize = [[separateLines objectAtIndex:i] sizeWithFont:self.font constrainedToSize:self.frame.size lineBreakMode:(NSLineBreakMode)UILineBreakModeWordWrap];
+            CGSize stringSize = [[separateLines objectAtIndex:i] sizeWithFont:self.font constrainedToSize:self.frame.size lineBreakMode:NSLineBreakByWordWrapping];
             if (stringSize.height == 0)
                 count += 1;
             else 

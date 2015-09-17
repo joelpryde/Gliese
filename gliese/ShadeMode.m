@@ -59,11 +59,12 @@ static ShadeMode* sharedInstance = nil;
     [_sizeButton nextMode];
     _sizeMode = _sizeButton.mode;
     
+    /*
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tweetReleased:) name:@"tweetReleaseEventType" object:nil ];
-	[_buttons addObject:[[GLButton alloc] initWithDimensions:CGRectMake( 4 * 60 + 10, 7, 50, 50 ) TextureRect:COORDS_GLIESE_BUTTON_TWEET PressedTextureRect:COORDS_GLIESE_BUTTON_TWEET_PRESS PressSelector:@"tweetPressEventType" ReleaseSelector:@"tweetReleaseEventType"]];
+	[_buttons addObject:[[GLButton alloc] initWithDimensions:CGRectMake( 4 * 60 + 10, 7, 50, 50 ) TextureRect:COORDS_GLIESE_BUTTON_TWEET PressedTextureRect:COORDS_GLIESE_BUTTON_TWEET_PRESS PressSelector:@"tweetPressEventType" ReleaseSelector:@"tweetReleaseEventType"]];*/
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(helpReleased:) name:@"helpReleaseEventType" object:nil ];
-	[_buttons addObject:[[GLButton alloc] initWithDimensions:CGRectMake( 5 * 60 + 10, 7, 50, 50 ) TextureRect:COORDS_GLIESE_BUTTON_HELP PressedTextureRect:COORDS_GLIESE_BUTTON_HELP_PRESS PressSelector:@"helpPressEventType" ReleaseSelector:@"helpReleaseEventType"]];
+	[_buttons addObject:[[GLButton alloc] initWithDimensions:CGRectMake( 4 * 60 + 10, 7, 50, 50 ) TextureRect:COORDS_GLIESE_BUTTON_HELP PressedTextureRect:COORDS_GLIESE_BUTTON_HELP_PRESS PressSelector:@"helpPressEventType" ReleaseSelector:@"helpReleaseEventType"]];
     
     /*
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(modeReleased:) name:@"modeReleaseEventType" object:nil ];

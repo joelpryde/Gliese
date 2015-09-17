@@ -91,7 +91,7 @@
 -(float)getTime;
 -(void)setMode:(bool)shadeMode;
 -(void)setOrientation:(UIInterfaceOrientation)interfaceOrientation;
--(void)tweetCapture:(UIImage*)captureImage;
+//-(void)tweetCapture:(UIImage*)captureImage;
 -(void)tweetImage;
 
 @end
